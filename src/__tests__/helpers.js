@@ -11,10 +11,6 @@ const {
     grandTotal
 } = require('../helpers.js')
 
-test('Qty 1 jika ditambah 1 hasilnya 2', () => {
-    expect(incrementQty(1)).toBe(2);
-});
-
 test('Qty 1 jika ditambah "1" hasilnya 2', () => {
     expect(incrementQty("1")).toBe(2);
 });
@@ -27,8 +23,8 @@ test('jika qty -5, maka keluarnya jadi 1', () => {
     expect(absoluteQty(-5)).toBe(1);
 });
 
-test('Subtotal dari 50000 dn qty 2 adalah 100000', () => {
-    expect(hitungSubtotal(50000, 2)).toBe(100000);
+test('Subtotal dari 60000 dan qty 3 adalah 180000', () => {
+    expect(hitungSubtotal(60000, 3)).toBe(180000);
 });
 
 test('Diskon kode KODE25 dari barang berharga 50k dan qty 2 (total 100k) adalah 25000', () => {
